@@ -1,0 +1,76 @@
+<!--For Project 10 - Accessiblity-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test Prep Pros Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="code.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+ <body>
+  <div class="container1">
+    <header class="headerwrapper">
+      <img class="headerpic" src="logo.png" alt="website logo">
+      <div class="headertext">
+        <h1>Test Prep Pros</h1>
+        <h3>Be ready for the ACT & SAT </h3>
+      </div>
+    </header>
+     <nav id="flex-nav">
+       <a href="#" class="toggleNav">&#9776; Menu</a> <!--This will only be visible less than 480px wide-->
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tests.html">Tests</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+    </nav>
+    
+    <main>
+
+        <h2>Contact Us</h2>
+        <p>Use this form to allow us to get in touch with you within 1 business day!
+            <br>* = Required Field</p>
+     <form  class="nestedgrid2" autocomplete="off" action="https://formspree.io/josh.craig@bss.k12.oh.us" method="POST">
+     <div class="div1">
+         Name*<br><input type="text" size="30" placeholder="Jane Doe" autofocus required name="fullname" aria-label="Name"><br>
+         Email*<br><input type="email" size="30" required name="email" aria-label="Email address"><br>
+         Phone*<br> <input type="tel" size="30" placeholder="(xxx) xxx-xxxx" required name="phone" aria-label="Phone Number"><br>
+         Personal Website<br><input type="url" size="30" name="website" aria-label="Personal Website"><br>
+     </div>
+     
+     <div class="div2">
+         Current High School<br><input type="text" size="30" list="schools" name="school" aria-label="Current School"><br>
+          <datalist id="schools">
+            <option value="Beaverbrook">
+            <option value="Birchwood">
+            <option value="Daytona">
+            <option value="Middleville">
+            <option value="Hainesville">
+            <option value="Other">
+          </datalist>
+          Expected date of entry<br><input type="date" min="2018-11-01" name="entry" aria-label="Date of Entry"><br>
+          Number of days/week desired<br><input type="number" min="1" max="5" step="1" value="2" name="days" aria-label="Days per week"><br>
+
+          <input type="submit" value="Help Me Boost My Scores!" class="button">
+     </div>
+     
+     </form>
+         <div class="call">
+            Or Call Us <br>
+            1-888-TESTPRO
+          </div>
+     </main>
+   
+    <footer>
+        <p>&copy; Test Prep Pros</p>
+        <p>3737 North Street</p>
+        <p>Beaverbrook, OH 45400</p>
+    </footer>
+    </div>
+</body>
+</html>
